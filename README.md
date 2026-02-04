@@ -2,6 +2,10 @@
 
 Go client for the [Sec4Dev Security Checks API](https://api.sec4.dev): disposable email detection and IP classification.
 
+## Documentation
+
+Full API documentation: [https://docs.sec4.dev/](https://docs.sec4.dev/)
+
 ## Install
 
 ```bash
@@ -65,5 +69,5 @@ Use functional options when creating the client:
 - `sec4dev.WithBaseURL(url)` — API base URL (default: `https://api.sec4.dev/api/v1`)
 - `sec4dev.WithRetries(n)` — Retry attempts (default: 3)
 - `sec4dev.WithRetryDelay(ms)` — Base retry delay in ms (default: 1000)
-- `sec4dev.WithHTTPClient(hc)` — Custom `*http.Client`
+- `sec4dev.WithHTTPClient(hc)` — Custom `*http.Client` (e.g. for timeout)
 - `sec4dev.WithRateLimitCallback(fn)` — Callback for rate limit updates
